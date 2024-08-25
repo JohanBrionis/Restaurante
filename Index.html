@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Mejora la capacidad de respuesta y escalabilidad en dispositivos móviles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Incluye el enlace al archivo de estilos CSS -->
+  <link rel="stylesheet" href="Style/style.css">
+  <title>Restaurante</title>
+</head>
+<body>
+  <!-- Contenedor del encabezado y navegación -->
+  <header class="container-header">
+    <nav class="Navegador-Menu">
+      <!-- Mejora la estructura y semántica, usa `header` y `nav` en lugar de `div` -->
+      <div class="separador"></div>
+      <!-- Logo del restaurante -->
+      <a href="#" class="Logo">Restaurante la 47</a>
+      <!-- Menú de navegación -->
+      <a href="#Inicio" class="menu">Inicio</a> |
+      <a href="#Ubicacion" class="menu">Ubicación</a> | <!-- Corregido ID de anclaje -->
+      <a href="#Pedir-Comida" class="menu">Pedir Comida</a> |
+      <a href="#Contacto" class="menu">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Sección de introducción -->
+  <section id="Inicio">
+    <div class="container-inicio">
+      <div class="container-inicio-items">
+        <div class="container-inicio-items-1">
+          <!-- Imagen y texto de introducción -->
+          <img src="/Images/plato.png" alt="Plato de comida" class="plato">
+          <h2 class="item-titulo">Que vas a disfrutar el día de hoy</h2>
+          <!-- Enlaces a otras secciones -->
+          <a href="#Menu" class="item-menu">Ver Menú</a> <!-- Corregido acento -->
+          <a href="#Pedir-Comida" class="item-pedir">Pedir Comida</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección del menú -->
+  <section id="Menu">
+    <div class="container-menu">
+      <h2 class="Titulo">Menú</h2> <!-- Corregido acento y se elimina etiqueta de cierre incorrecta -->
+      <!-- Elementos del menú -->
+      <a href="#Pedir-Comida" class="Pedir">
+        <div class="container-menu-items">
+          <img src="/Images/plato.png" alt="Carne Asada">
+          <h2>Carne Asada</h2>
+          <p>$10.000</p>
+        </div>
+      </a>
+      <!-- Repite los elementos del menú según sea necesario -->
+      <!-- Eliminados los elementos duplicados para simplificación -->
+      <a href="#Pedir-Comida" class="Pedir">
+      <div class="container-menu-items">
+        <img src="/Images/plato.png" alt="Carne Asada">
+        <h2>Carne Asada</h2>
+        <p>$10.000</p>
+      </div>
+    </a>
+    <a href="#Pedir-Comida" class="Pedir">
+        <div class="container-menu-items">
+          <img src="/Images/plato.png" alt="Carne Asada">
+          <h2>Carne Asada</h2>
+          <p>$10.000</p>
+        </div>
+      </a>
+      <a href="#Pedir-Comida" class="Pedir">
+        <div class="container-menu-items">
+          <img src="/Images/plato.png" alt="Carne Asada">
+          <h2>Carne Asada</h2>
+          <p>$10.000</p>
+        </div>
+      </a>
+      <a href="#Pedir-Comida" class="Pedir">
+        <div class="container-menu-items">
+          <img src="/Images/plato.png" alt="Carne Asada">
+          <h2>Carne Asada</h2>
+          <p>$10.000</p>
+        </div>
+      </a>
+      <a href="#Pedir-Comida" class="Pedir">
+        <div class="container-menu-items">
+          <img src="/Images/plato.png" alt="Carne Asada">
+          <h2>Carne Asada</h2>
+          <p>$10.000</p>
+        </div>
+      </a>
+      <a href="#Pedir-Comida" class="Pedir">
+        <div class="container-menu-items">
+          <img src="/Images/plato.png" alt="Carne Asada">
+          <h2>Carne Asada</h2>
+          <p>$10.000</p>
+        </div>
+      </a>
+      <a href="#Pedir-Comida" class="Pedir">
+        <div class="container-menu-items">
+          <img src="/Images/plato.png" alt="Carne Asada">
+          <h2>Carne Asada</h2>
+          <p>$10.000</p>
+        </div>
+      </a>
+      <a href="#Pedir-Comida" class="Pedir">
+        <div class="container-menu-items">
+          <img src="/Images/plato.png" alt="Carne Asada">
+          <h2>Carne Asada</h2>
+          <p>$10.000</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Sección de ubicación -->
+  <section id="Ubicacion">
+    <div class="container-ubicacion">
+      <div class="container-ubicacion-items">
+        <img src="Images/marcador.svg" alt="Icono de Ubicación">
+        <h2>Estamos ubicados:</h2>
+        <p>Calle 47 Casa #36 Barrio El Dorado.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección para pedir comida -->
+  <section id="Pedir-Comida">
+    <div class="container-form">
+      <div class="container-form-items">
+        <form>
+          <!-- Etiquetas y campos de formulario -->
+          <label for="Nombre">Nombre:</label>
+          <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" required> <!-- Añadido `required` -->
+
+          <label for="Numero">Número de teléfono:</label>
+          <input type="tel" name="Numero" id="Numero" placeholder="Número telefónico" required> <!-- Cambiado `number` a `tel` para un mejor input de teléfono -->
+
+          <label for="Direccion">Dirección:</label>
+          <input type="text" name="Direccion" id="Direccion" placeholder="Dirección" required>
+
+          <label for="InfoAdi">Información adicional:</label>
+          <textarea name="Informacion-Adicional" id="InfoAdi" placeholder="Añadir información"></textarea>
+
+          <input type="submit" value="Enviar" class="enviar">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="Contacto">
+    <div class="container-contacto">
+      <div class="container-contacto-items">
+        <img src="Images/llamada-telefonica.svg" alt="Icono de contacto">
+        <h2>Nuestro contacto:</h2>
+        <p>3023030414</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
