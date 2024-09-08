@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   padding: 0;
   margin: 0;
@@ -369,3 +370,374 @@ nav .menu:hover {
   width: 40px;
   position: relative;
 }
+=======
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  color: #000;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-header {
+  background-color: #333;
+  min-height: 60px;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+justify-items: center;
+padding: 20px;
+padding-right: 80px;
+}
+
+nav .Logo {
+  position: relative;
+  text-decoration: none;
+  font-size: 30px;
+  left: -70px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.separador {
+  min-width: 80px;
+  
+  justify-items: center;
+}
+
+nav .Logo:hover {
+  color: bisque;
+}
+
+nav .menu {
+  position: relative;
+  top: 5px;
+  font-weight: bold;
+  color: bisque;
+  text-decoration: none;
+}
+
+nav .menu:hover {
+  transition: 0.5s;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+
+.container-inicio {
+  background-image: url("/Images/restaurante.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 510px;
+  display: flex;
+  position: relative;
+  padding-top: 5px;
+  z-index: 0;
+}
+
+.container-inicio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Capa negra con opacidad del 50% */
+  z-index: 1;
+}
+
+.container-inicio-items {
+  border-radius: 20px;
+  position: absolute;
+  left: 120px;
+  min-width: 80%;
+  justify-content: space-between;
+  min-height: 80%;
+  z-index: 2;
+}
+
+.container-inicio-items-1 .item-titulo {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  max-width: 500px;
+  color: antiquewhite;
+}
+
+.container-inicio-items-1 .item-menu {
+  position: absolute;
+  left: 50px;
+  top: 300px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #3333337d;
+  border: solid;
+  border-color: whitesmoke;
+  border-radius: 50px;
+  color: antiquewhite;
+  border-color: #757575b7;
+  padding: 10px 60px 10px 60px;
+}
+
+.container-inicio-items-1 .item-pedir {
+  position: absolute;
+  left: 300px;
+  top: 300px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #333;
+  border: solid;
+  background-color: #3333337d;
+  border-color: whitesmoke;
+  border-radius: 50px;
+  color: antiquewhite;
+  border-color: #757575b7;
+  padding: 10px 60px 10px 60px;
+
+}
+
+.container-inicio-items-1 .item-menu:hover {
+  background-color: #333333;
+  border-color: #757575b7;
+  transition: 0.5s;
+  color: whitesmoke;
+  box-shadow: 0 0 5px rgb(229, 240, 168),
+              0 0 10px rgb(229, 240, 168),
+              0 0 20px rgb(229, 240, 168),
+              0 0 50px rgb(229, 240, 168);
+}
+
+.container-inicio-items-1 .item-pedir:hover {
+  background-color: #333;
+  color: whitesmoke;
+  transition: 0.5s;
+  box-shadow: 0 0 5px rgb(216, 216, 216),
+              0 0 10px rgb(216, 216, 216),
+              0 0 20px rgb(216, 216, 216),
+              0 0 50px rgb(216, 216, 216);
+}
+
+.container-inicio-items-1 .plato {
+  position: absolute;
+  max-width: 400px;
+  right: 20px;
+}
+
+
+.container-menu {
+  background-color: #ddd;
+  padding-top: 60px;
+  min-height: 510px;
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+
+.container-menu .Titulo {
+  color: black;
+  min-width: 100px;
+  position: absolute;
+  left: 45%;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  top: 15px;
+  font-size: 40px;
+}
+
+.container-menu-items {
+  padding: 20px;
+  margin: 20px;
+  background-color: #bdbcbc;
+  min-width: 250px;
+  max-height: 250px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 0.7rem;
+  transition: all ease 0.3s;
+}
+
+.container-menu-items img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 25px;
+}
+
+.container-menu .Pedir {
+  color: black;
+  text-decoration: none;
+}
+
+.container-menu-items h2 {
+  color: brown;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container-menu-items p {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.container-menu-items:hover {
+  background-color: #00000047;
+  box-shadow: 0px 0px 20px 1px #eab52f73;
+  border: 1px solid rgba(255, 255, 255, 0.454);
+  transition: 0.5s;
+}
+
+.container-ubicacion {
+  background-color: #1f1f1fdf;
+  min-height: 150px;
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  justify-items: center;
+  z-index: 0;
+  text-align: center;
+}
+
+.container-ubicacion img {
+  padding-top: 20px;
+  width: 40px;
+  position: relative;
+}
+
+.container-ubicacion-items {
+  z-index: 2;
+  color: antiquewhite;
+}
+
+
+
+.container-form {
+  background-image: url("/restaurante.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-color: #737373;
+  padding-top: 60px;
+  min-height: 510px;
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  justify-items: center;
+  z-index: 0;
+}
+
+.container-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Capa negra con opacidad del 50% */
+  z-index: 1;
+}
+
+.container-form-items {
+  z-index: 2;
+}
+
+.container-form-items form {
+  padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin: 20px;
+  min-height: 600px;
+  background-color: #1e1e1e71;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.container-form-items form input {
+  padding: 20px 40px 20px 40px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+}
+
+.container-form-items form textarea {
+  padding: 20px 40px 20px 40px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+  resize: vertical;
+}
+
+.container-form-items form input:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696,
+             -13px -13px 100px #ffffff;
+}
+
+.container-form-items .enviar {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+.container-form-items form label {
+  text-align: center;
+  color: #bcbcbc;
+  position: relative;
+  top: 0;
+  margin: 20px;
+}
+
+.container-contacto {
+  background-color: #333;
+  color: antiquewhite;
+  padding-top: 5px;
+  min-height: 40px;
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  justify-items: center;
+  padding-bottom: 10px;
+}
+
+.container-contacto-items {
+  text-align: center;
+}
+
+.container-contacto img {
+  top: 2px;
+  width: 40px;
+  position: relative;
+}
+>>>>>>> 60447bec3e89c07fd01e0386aefeafa723eabd6d
